@@ -1,5 +1,6 @@
-import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import { notFound } from 'next/navigation'
+import { Metadata } from 'next'
 import { getProtocol, getProtocolSlugs } from '@/lib/protocols'
 
 interface ProtocolPageProps {
@@ -8,6 +9,34 @@ interface ProtocolPageProps {
 
 export async function generateStaticParams() {
     return getProtocolSlugs().map((slug) => ({ slug }))
+}
+
+export async function generateMetadata({ params }: ProtocolPageProps): Promise<Metadata> {
+    const { slug } = await params
+    const protocol = getProtocol(slug)
+
+    if (!protocol) {
+        return {
+            title: 'Protocolo no encontrado',
+        }
+    }
+
+    return {
+        title: `Estudio para ${protocol.indication}`,
+        description: `¿Padeces ${protocol.indication}? Verifica si calificas para este estudio clínico de ${protocol.sponsor}. Tratamiento y atención médica sin costo.`,
+        openGraph: {
+            title: `Estudio Clínico: ${protocol.indication}`,
+            description: `Participa en la investigación de nuevos tratamientos para ${protocol.indication}. Revisa los criterios de elegibilidad aquí.`,
+            images: [
+                {
+                    url: `/protocolo/${slug}/opengraph-image`,
+                    width: 1200,
+                    height: 630,
+                    alt: protocol.name,
+                },
+            ],
+        },
+    }
 }
 
 export default async function ProtocolLandingPage({ params }: ProtocolPageProps) {

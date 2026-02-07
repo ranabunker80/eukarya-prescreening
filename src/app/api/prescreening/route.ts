@@ -30,9 +30,10 @@ export async function POST(request: NextRequest) {
             .single()
 
         if (protocolError || !protocolData) {
+            const errorMessage = protocolError?.message || 'Protocolo no encontrado en la base de datos'
             console.error('Protocol lookup error:', protocolError)
             return NextResponse.json(
-                { error: 'Error al buscar protocolo' },
+                { error: `Error al buscar protocolo (${protocol_slug}): ${errorMessage}` },
                 { status: 500 }
             )
         }

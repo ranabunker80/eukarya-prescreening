@@ -145,7 +145,7 @@ export const lillyKGBS: ProtocolConfig = {
     slug: 'lilly-kgbs',
     name: 'Estudio ARIA-PAR',
     sponsor: 'Eli Lilly',
-    piName: 'Dr. Lino Guevara',
+    piName: 'Dra. Dora Valdes',
     indication: 'Rinitis alérgica perenne',
     description: 'Estudio de investigación para evaluar un nuevo tratamiento en pacientes con rinitis alérgica perenne que no han logrado control adecuado con tratamientos convencionales.',
     inclusionCriteria: [

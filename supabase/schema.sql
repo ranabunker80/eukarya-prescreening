@@ -186,7 +186,7 @@ INSERT INTO protocols (slug, name, sponsor, pi_name, indication, description, in
     'lilly-kgbs',
     'Estudio ARIA-PAR',
     'Eli Lilly',
-    'Dr. Lino Guevara',
+    'Dra. Dora Valdes',
     'Rinitis alérgica perenne',
     'Estudio de investigación para evaluar un nuevo tratamiento en pacientes con rinitis alérgica perenne que no han logrado control adecuado con tratamientos convencionales.',
     '["Personas de 12 años o más", "Diagnóstico de rinitis alérgica perenne", "Síntomas persistentes durante todo el año", "Falla o respuesta inadecuada a antihistamínicos y/o corticosteroides nasales"]'::jsonb,

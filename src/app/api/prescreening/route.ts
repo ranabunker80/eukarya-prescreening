@@ -99,8 +99,9 @@ export async function POST(request: NextRequest) {
 
     } catch (error) {
         console.error('Prescreening API error:', error)
+        const message = error instanceof Error ? error.message : 'Error interno del servidor'
         return NextResponse.json(
-            { error: 'Error interno del servidor' },
+            { error: message },
             { status: 500 }
         )
     }

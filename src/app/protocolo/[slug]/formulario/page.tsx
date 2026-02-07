@@ -143,7 +143,7 @@ export default function FormularioPage({ params }: FormularioPageProps) {
             }
         } catch (error) {
             console.error('Submit error:', error)
-            setErrors({ submit: 'Error al enviar el formulario. Por favor intente de nuevo.' })
+            setErrors({ submit: error instanceof Error ? error.message : 'Error al enviar el formulario' })
         } finally {
             setSubmitting(false)
         }

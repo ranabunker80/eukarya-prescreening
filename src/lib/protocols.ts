@@ -40,11 +40,11 @@ export function calculateAge(birthDate: string): number {
 // Sanofi EFC18419 Protocol Configuration
 export const sanofiEFC18419: ProtocolConfig = {
     slug: 'sanofi-efc18419',
-    name: 'Estudio CEREN-2',
-    sponsor: 'Sanofi',
+    name: 'Programa de atención clínica para Pólipos Nasales',
+    sponsor: '',
     piName: 'Dr. Lino Guevara',
     indication: 'Rinosinusitis crónica con pólipos nasales (CRSwNP)',
-    description: 'Estudio de investigación para evaluar un tratamiento en pacientes con rinosinusitis crónica con pólipos nasales que no han respondido adecuadamente al tratamiento estándar.',
+    description: 'Programa de atención clínica para evaluar un tratamiento en pacientes con rinosinusitis crónica con pólipos nasales que no han respondido adecuadamente al tratamiento estándar.',
     inclusionCriteria: [
         'Adultos mayores de 18 años',
         'Diagnóstico confirmado de pólipos nasales',
@@ -143,11 +143,11 @@ export const sanofiEFC18419: ProtocolConfig = {
 // Lilly KGBS Protocol Configuration
 export const lillyKGBS: ProtocolConfig = {
     slug: 'lilly-kgbs',
-    name: 'Estudio ARIA-PAR',
-    sponsor: 'Eli Lilly',
+    name: 'Programa de atención clínica para Rinitis Alérgica',
+    sponsor: '',
     piName: 'Dra. Dora Valdes',
     indication: 'Rinitis alérgica perenne',
-    description: 'Estudio de investigación para evaluar un nuevo tratamiento en pacientes con rinitis alérgica perenne que no han logrado control adecuado con tratamientos convencionales.',
+    description: 'Programa de atención clínica para evaluar un nuevo tratamiento en pacientes con rinitis alérgica perenne que no han logrado control adecuado con tratamientos convencionales.',
     inclusionCriteria: [
         'Personas de 12 años o más',
         'Diagnóstico de rinitis alérgica perenne',

@@ -172,11 +172,11 @@ CREATE POLICY "Authenticated can insert audit"
 -- Sanofi EFC18419 (CRSwNP)
 INSERT INTO protocols (slug, name, sponsor, pi_name, indication, description, inclusion_criteria, exclusion_criteria) VALUES (
     'sanofi-efc18419',
-    'Estudio CEREN-2',
-    'Sanofi',
+    'Programa de atención clínica para Pólipos Nasales',
+    '',
     'Dr. Lino Guevara',
     'Rinosinusitis crónica con pólipos nasales (CRSwNP)',
-    'Estudio de investigación para evaluar un tratamiento en pacientes con rinosinusitis crónica con pólipos nasales que no han respondido adecuadamente al tratamiento estándar.',
+    'Programa de atención clínica para evaluar un tratamiento en pacientes con rinosinusitis crónica con pólipos nasales que no han respondido adecuadamente al tratamiento estándar.',
     '["Adultos mayores de 18 años", "Diagnóstico confirmado de pólipos nasales", "Síntomas persistentes por más de 12 semanas", "Falla a tratamiento estándar (corticosteroides nasales/orales)"]'::jsonb,
     '["Infección activa significativa", "Uso actual de otro biológico", "Embarazo o lactancia", "Inmunoterapia activa"]'::jsonb
 );
@@ -184,11 +184,11 @@ INSERT INTO protocols (slug, name, sponsor, pi_name, indication, description, in
 -- Lilly KGBS (Perennial Allergic Rhinitis)
 INSERT INTO protocols (slug, name, sponsor, pi_name, indication, description, inclusion_criteria, exclusion_criteria) VALUES (
     'lilly-kgbs',
-    'Estudio ARIA-PAR',
-    'Eli Lilly',
+    'Programa de atención clínica para Rinitis Alérgica',
+    '',
     'Dra. Dora Valdes',
     'Rinitis alérgica perenne',
-    'Estudio de investigación para evaluar un nuevo tratamiento en pacientes con rinitis alérgica perenne que no han logrado control adecuado con tratamientos convencionales.',
+    'Programa de atención clínica para evaluar un nuevo tratamiento en pacientes con rinitis alérgica perenne que no han logrado control adecuado con tratamientos convencionales.',
     '["Personas de 12 años o más", "Diagnóstico de rinitis alérgica perenne", "Síntomas persistentes durante todo el año", "Falla o respuesta inadecuada a antihistamínicos y/o corticosteroides nasales"]'::jsonb,
     '["Infección respiratoria activa", "Embarazo o lactancia", "Inmunoterapia con alérgenos activa", "Uso de biológico en los últimos 6 meses"]'::jsonb
 );

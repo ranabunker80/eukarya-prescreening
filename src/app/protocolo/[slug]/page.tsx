@@ -23,9 +23,9 @@ export async function generateMetadata({ params }: ProtocolPageProps): Promise<M
 
     return {
         title: `Estudio para ${protocol.indication}`,
-        description: `¿Padeces ${protocol.indication}? Verifica si calificas para este estudio clínico de ${protocol.sponsor}. Tratamiento y atención médica sin costo.`,
+        description: `¿Padeces ${protocol.indication}? Verifica si calificas para este programa de atención clínica. Tratamiento y atención médica sin costo.`,
         openGraph: {
-            title: `Estudio Clínico: ${protocol.indication}`,
+            title: `Programa de atención clínica: ${protocol.indication}`,
             description: `Participa en la investigación de nuevos tratamientos para ${protocol.indication}. Revisa los criterios de elegibilidad aquí.`,
             images: [
                 {
@@ -63,11 +63,7 @@ export default async function ProtocolLandingPage({ params }: ProtocolPageProps)
                 {/* Study Info */}
                 <section className="landing-section animate-fadeIn">
                     <div className="card">
-                        <div className="grid grid-cols-2 gap-4 md:grid-cols-1">
-                            <div className="info-item">
-                                <div className="info-label">Patrocinador</div>
-                                <div className="info-value">{protocol.sponsor}</div>
-                            </div>
+                        <div className="grid grid-cols-1 gap-4">
                             <div className="info-item">
                                 <div className="info-label">Investigador Principal</div>
                                 <div className="info-value">{protocol.piName}</div>

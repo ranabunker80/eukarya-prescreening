@@ -23,11 +23,7 @@ export default function ProtocolosPage() {
                             <span className="badge badge-positive">Activo</span>
                         </div>
 
-                        <div className="grid grid-cols-2 gap-4 mb-4 md:grid-cols-1">
-                            <div className="info-item">
-                                <div className="info-label">Patrocinador</div>
-                                <div className="info-value">{protocol.sponsor}</div>
-                            </div>
+                        <div className="grid grid-cols-1 gap-4 mb-4">
                             <div className="info-item">
                                 <div className="info-label">Investigador Principal</div>
                                 <div className="info-value">{protocol.piName}</div>

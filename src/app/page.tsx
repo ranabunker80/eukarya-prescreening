@@ -32,7 +32,7 @@ export default function HomePage() {
                     <h3 className="mb-1">{protocol.name}</h3>
                     <p className="text-secondary mb-2">{protocol.indication}</p>
                     <p className="text-sm text-muted">
-                      Patrocinador: {protocol.sponsor} · Investigador: {protocol.piName}
+                      Investigador: {protocol.piName}
                     </p>
                   </div>
                   <span className="btn btn-ghost btn-sm" style={{ flexShrink: 0 }}>
